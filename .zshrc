@@ -24,7 +24,7 @@ alias node='unalias node npm && load_nvm && node'
 alias npm='unalias node npm && load_nvm && npm'
 alias react-native="unalias react-native && load_nvm && react-native"
 
-ZSH_THEME="andreasTheme/andreas"
+ZSH_THEME="myTheme/oxide"
 
 plugins=(git)
 
