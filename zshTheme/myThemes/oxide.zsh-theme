@@ -25,12 +25,14 @@ if [[ $terminfo[colors] -ge 256 ]]; then
     purple="%F{140}"
     red="%F{167}"
     limegreen="%F{107}"
+    blue="%F{032}"
 else
     turquoise="%F{cyan}"
     orange="%F{yellow}"
     purple="%F{magenta}"
     red="%F{hotpink}"
     limegreen="%F{green}"
+    blue="%F{blue}"
 fi
 
 # enable VCS systems you use.
@@ -91,5 +93,5 @@ function oxide_precmd {
 add-zsh-hook precmd oxide_precmd
 
 PROMPT=$'
-%{$limegreen%}%~${PR_RST} $vcs_info_msg_0_$(virtualenv_info)
+%{$blue%}%~${PR_RST} $vcs_info_msg_0_$(virtualenv_info)
 %(?.%F{white}.%F{red})➜%f '
