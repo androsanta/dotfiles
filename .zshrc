@@ -4,7 +4,6 @@ DEFAULT_USER='andrea'
 
 # Aliases
 alias ll="ls -lah"
-alias c="clear"
 alias o="open"
 alias s="sublime"
 alias pingdns="ping 8.8.8.8"
